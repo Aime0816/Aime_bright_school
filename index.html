@@ -6,15 +6,26 @@
     <title>Bright future school</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+
+    
 </head>
 <body>
     <section id="navigation">
     <div class="navbar">
         <nav>
+       
+           
         <ul>
+            <h1><i class="fa-solid fa-lightbulb" style="color: #FFD43B; width: 0px;"></i></h1>
+            <h1 style="width: 300px; color: white;"><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Bright</span> <br><span style="font-size: 16px;">Future</span></h1>     
             <li><a href="#home"><i class="fas fa-home"></i>HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">COURSES</a></li>
+            <li><a href="#choice">SERVICES</a></li>
+            <li><a href="#courses">COURSES</a></li>
             <li><a href="#categories">CATEGORIES</a></li>
             <button class="btn">Get started</button>
         </ul>
@@ -22,82 +33,174 @@
     </div>
 </section>
 
+
+<div>
+    
+
+
+</div>
+
 <section id="home">
     <div class="headin">
         <div id="one">
-        <h1>Start Learning With Our Experts,Anywhere, Anytime</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae optio aspernatur ratione, soluta vitae omnis aliquam magni in quam illum ab, ea debitis nisi perspiciatis libero. Qui eligendi hic veniam.</p>
-        <div class="search">
+             <h1>Start Learning With <br> Our Experts, <br>Anywhere, Anytime</h1>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae optio <br> aspernatur ratione, soluta vitae omnis aliquam magni in quam illum ab, <br> ea debitis nisi perspiciatis libero. Qui eligendi hic veniam.</p>
+         <div class="search">
             <input type="search" class="search" placeholder="Search Your Course">
-            <button  type="submit">Search <img src="img/magnifying-glass-solid.svg" alt=""></button>
+            <button  type="submit" id="btn"><i class="fa-solid fa-search" style="color: white; background-color: green; border: none;"></i></button>
+         </div>
         </div>
-    </div>
-    <div>
-        <img src="img/this.webp" alt="" class="img">
-    </div>
+     <div class="img">
+        <div>
+            <img src="img/back.avif" alt="">
+        </div>
+        <div class="total">
+            <span>
+                <div class="book"> <i class="fa-solid fa-book" style="color: white;"></i></div>
+               </span>
+               <span><h3>284+</h3>
+                <p>Total couses</p>
+            </span>
+               
+            
+            <span></span>
+        </div>
+        <div class="rate">
+            <span>4.7</span>
+            <span> 
+            <h3>Ratings</h3>
+            <p>(58k) <i class="fa-solid fa-star" style="color: yellow;"></i></p>
+            </span>
+            
+        </div>
+       
+         <span></span>
+     </div>
     </div>
 
-  
+<!-- Popover Example
+<div>
+    <span><hr></span>
+    <button type="button" id="popoverBtn" style="margin-top: 20px;">Show Info</button>
+    <div id="popover" style="display:none; position:absolute; background:#fff; border:1px solid #ccc; padding:10px; border-radius:5px; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:1000;">
+        This is a popover message!
+    </div>
+</div>
+<script>
+    const btn = document.getElementById('popoverBtn');
+    const popover = document.getElementById('popover');
+    btn.addEventListener('click', function(e) {
+        if(popover.style.display === 'none' || popover.style.display === '') {
+            const rect = btn.getBoundingClientRect();
+            popover.style.left = rect.left + window.scrollX + 'px';
+            popover.style.top = rect.bottom + window.scrollY + 5 + 'px';
+            popover.style.display = 'block';
+        } else {
+            popover.style.display = 'none';
+        }
+    });
+    document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !popover.contains(e.target)) {
+            popover.style.display = 'none';
+        }
+    });
+</script> -->
+<div class="partner">
+  <p style="background-color: rgb(176, 224, 176); text-align: center;">Our trusted partners around the world</p>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><h4><img src="img/oxford.jpeg" ></h4></div>
+        <div class="item"><h4><img src="img/camg.jpeg" alt=""></h4></div>
+        <div class="item"><h4><img src="img/download (1).png" alt=""></h4></div>
+        <div class="item"><h4><img src="img/download.png" alt=""></h4></div>
+        <div class="item"><h4><img src="img/gree.jpeg" alt=""></h4></div>
+        <div class="item"><h4><img src="img/oxford.jpeg" alt=""></h4></div>
+        <div class="item"><h4><img src="img/camg.jpeg" alt=""></h4></div>
+        <div class="item"><h4><img src="img/download (1).png" alt=""></h4></div>
+        <div class="item"><h4><img src="img/download.png" alt=""></h4></div>
+        <div class="item"><h4><img src="img/gree.jpeg" alt=""></h4></div>
+    </div>
+</div>
 </section>
 
 
-<section >
-    <div>
+<section id="choice">
+    <div class="choice-head">
         <h1>Why you choose us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
     </div>
+    <div class="flex">
     <div class="flexible">
-        <img src="" alt="">
+        <div class="icon1">
+           <span><i class="fa-solid fa-calendar" style="color: rgb(170, 93, 10);"></i></span><br><br><br>
+        </div><br>
         <h2>Flexible Timing</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
     </div>
     <div class="flexible">
-        <img src="" alt="">
+      <div class="icon1">
+         <span><i class="fa-solid fa-user-graduate" style="color: green;"></i></span><br><br><br>
+        </div><br>
         <h2>Expert teachers</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
     </div>
     <div class="flexible">
-        <img src="" alt="">
+      <div class="icon1">
+        <span ><i class="fa-solid fa-clock" style="color: rgb(27, 27, 96);"></i></span><br><br><br>
+      </div><br>
         <h2>24/7 Live Support</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    </div>
     </div>
 </section>
 
 <section id="courses">
-    <div>
-      <h2>Choouse Your favorite course</h2>  
-    </div>
+   
 </section>
 
 <section id="categories">
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tenetur aliquam aliquid. Ipsum commodi aliquam saepe? Laboriosam illo alias aspernatur excepturi, sequi dolorem cum, architecto adipisci officiis a nemo neque.</p>
+    <div class="course-head">
+        <h2>Choouse Your favorite course</h2>  
+      </div>
+
+    <div class="categ">
+        <br><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolor tenetur aliquam aliquid. Ipsum commodi aliquam saepe? <br> Laboriosam illo alias aspernatur excepturi, <br> sequi dolorem cum, architecto adipisci officiis a nemo neque.</p>
     </div>
+    <div class="cate">
     <div class="cat">
-        <img src="" alt="">
+        <div class="icon">
+          <span><i class="fa-solid fa-dashboard"></i></span>
+          </div><br>
         <h3>Designing</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi quasi possimus veniam quisquam voluptatem rerum, ducimus repudiandae et harum autem ea fugit est! Ab nemo eius necessitatibus! Laudantium, placeat.</p>
     </div>
     <div class="cat">
-        <img src="" alt="">
+        <div class="icon">
+        <span><i class="fa-solid fa-code"></i></span>
+        </div><br>
         <h3>Development</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi quasi possimus veniam quisquam voluptatem rerum, ducimus repudiandae et harum autem ea fugit est! Ab nemo eius necessitatibus! Laudantium, placeat.</p>
     </div>
     <div class="cat">
-        <img src="" alt="">
+        <div class="icon">
+        <span><i class="fa-solid fa-android"></i></span>
+        </div><br>
         <h3>Marketing</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi quasi possimus veniam quisquam voluptatem rerum, ducimus repudiandae et harum autem ea fugit est! Ab nemo eius necessitatibus! Laudantium, placeat.</p>
     </div>
     <div class="cat">
-        <img src="" alt="">
+        <div class="icon">
+        <span><i class="fa-solid fa-camera"></i></span>
+        </div><br>
         <h3>Photography</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi quasi possimus veniam quisquam voluptatem rerum, ducimus repudiandae et harum autem ea fugit est! Ab nemo eius necessitatibus! Laudantium, placeat.</p>
+    </div>
     </div>
 </section>
   
 <section class="footer">
-    <div class="foot">
-        <h1>Bright Future School</h1>
+    <div class="foot" id="foot">
+        <h1><h2><i class="fa-solid fa-lightbulb" style="color: #FFD43B; width: 0px;"></i></h2><h2>Bright Future</h2> </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
     </div>
@@ -119,14 +222,26 @@
         <p><a href="">Services</a></p><br>
         <p><a href="">Courses</a></p><br>
     </div>
-    <div class="foot">
+    <div class="foot" id="news-letter">
         <h2>Newsletter</h2>
         <input type="text" placeholder="Enter your email"><br>
-        <button class="btn">Subscribe</button><br>
+        <button class="btn" id="alertBtn">Subscribe</button><br>
     </div>
 
-    <p>Created By <span>Five Star School </span>All rights reserved</p>
+    
 </section>
+<div class="news-letter">
+    <p>Created By <span style="color: #FFD43B;">Five Star School </span>All rights reserved</p>
+</div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="script.js"></script>
 
 
    
